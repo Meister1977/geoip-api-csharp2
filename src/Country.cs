@@ -20,37 +20,47 @@
 
 
 using System;
-using System.IO;
-public class Country {
 
-    private String code;
-    private String name;
+namespace LMI.GeoIp
+{
+    public class Country
+    {
+        private readonly String code;
+        private readonly String name;
 
-    /**
+        /**
      * Creates a new Country.
      *
      * @param code the country code.
      * @param name the country name.
      */
-    public Country(String code, String name) {
-        this.code = code;
-        this.name = name;
-    }
-   /**
+
+        public Country(String code, String name)
+        {
+            this.code = code;
+            this.name = name;
+        }
+
+        /**
      * Returns the ISO two-letter country code of this country.
      *
      * @return the country code.
      */
-    public String getCode() {
-        return code;
-    }
 
-    /**
+        public String getCode()
+        {
+            return code;
+        }
+
+        /**
      * Returns the name of this country.
      *
      * @return the country name.
      */
-    public String getName() {
-        return name;
+
+        public String getName()
+        {
+            return name;
+        }
     }
 }
